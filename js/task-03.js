@@ -12,3 +12,20 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imagesGallery = document.querySelector('.gallery');
+
+// const onGalleryImg = document.createElement('img');
+
+const markup = images.map(({ url, alt }) => `<li class="item"><img src="${url}" alt="${alt}" width="320" height="200"></li> `).join('');
+
+imagesGallery.insertAdjacentHTML("beforeend", markup);
+
+const onGalleryItem = document.querySelectorAll('.item');
+// const onGalleryItem = imagesGallery.children;
+// imagesGallery.children.classList.add("flex");
+console.log(onGalleryItem);
+// onGalleryItem.classList.add("flex");
+// console.log(onGalleryItem.classList);
+
+imagesGallery.classList.add("flex");
