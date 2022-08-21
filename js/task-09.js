@@ -14,7 +14,7 @@ function onChangeColor (event) {
   body.style.backgroundColor = getRandomHexColor();
   console.log(getRandomHexColor());
 
-  colorName.textContent = getRandomHexColor();
+  colorName.textContent = body.style.backgroundColor;
   // console.log(colorName);
 };
 
