@@ -1,13 +1,13 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-// console.log(getRandomHexColor());
+console.log(getRandomHexColor());
 
 const btn = document.querySelector('.change-color');
 const colorName = document.querySelector('.color');
 
 btn.addEventListener('click', onChangeColor);
-colorName.addEventListener('click', onChangeNane);
+// colorName.addEventListener('click', onChangeNane);
 
 function onChangeColor (event) {
   const body = document.body;
@@ -31,3 +31,15 @@ function onChangeColor (event) {
 
 Для генерации случайного цвета используй функцию getRandomHexColor.
  */
+
+
+
+// const buttonRef = document.querySelector('.change-color');
+// const spanEl = document.querySelector('.color');
+// buttonRef.addEventListener('click', () => {
+//   spanEl.textContent = getRandomHexColor();
+//   document.body.setAttribute(
+//     'style',
+//     'background-color: ' + spanEl.textContent
+//   );
+// });
